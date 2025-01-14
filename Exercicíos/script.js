@@ -173,9 +173,9 @@ if (document.getElementById("formTabuada")){
             console.log(numero + " x " + x + " = " + (numero * x));
         }
     });
-}
+};
 
-//Exercicío 15
+//Exercicío 5
 if (document.getElementById("formSequencia")){
 
     document.getElementById("formSequencia").addEventListener("submit", function(event) {
@@ -192,4 +192,20 @@ if (document.getElementById("formSequencia")){
         window.alert(maior);
 
     });
-}
+};
+
+//Exercicío 6
+if (document.getElementById("formPalavra")){
+
+    document.getElementById("formPalavra").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var palavra = document.getElementById("palavra").value;
+
+        let palavrainvertida = palavra.split('');
+        palavrainvertida.reverse();
+
+        let novapalavra = palavrainvertida.join('');
+        window.alert(novapalavra);
+    });
+};
