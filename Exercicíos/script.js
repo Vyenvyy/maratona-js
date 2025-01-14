@@ -114,3 +114,73 @@ Tarefas:
 Use um loop para gerar os números pares.
 Adicione os números a um array e exiba-o no console.
 */
+
+//Exercicío 1
+if(document.getElementById("formSoma")){
+
+    document.getElementById("formSoma").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        var numero1 = parseFloat(document.getElementById("numero1").value);
+        var numero2 = parseFloat(document.getElementById("numero2").value);
+    
+        var total = numero1 + numero2;
+    
+        window.alert("O Total de sua soma é: " + total);
+    });
+}
+
+//Exercicío 2
+if (document.getElementById("formParImpar")){
+
+    document.getElementById("formParImpar").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var numero = parseFloat(document.getElementById("numero").value);
+
+        if (numero % 2 === 0) {
+            console.log(numero + " é par.");
+        } else {
+            console.log(numero + " é ímpar.");
+        }
+
+    });
+}
+
+//Exercicío 3
+if (document.getElementById("formLoop")){
+
+    document.getElementById("formLoop").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let i = 1;
+        while (i <= 10) {
+            console.log(i);
+            i++;
+        }
+    });
+}
+
+//Exercicío 4
+if (document.getElementById("formTabuada")){
+
+    document.getElementById("formTabuada").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let numero = parseFloat(document.getElementById("numero").value);
+
+        for (let x = 0; x <= 10; x++) {
+            console.log(numero + " x " + x + " = " + (numero * x));
+        }
+    });
+}
+
+//Exercicío 15
+if (document.getElementById("formPares")){
+
+    document.getElementById("formPares").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+
+    });
+}
