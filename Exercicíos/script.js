@@ -176,11 +176,20 @@ if (document.getElementById("formTabuada")){
 }
 
 //Exercicío 15
-if (document.getElementById("formPares")){
+if (document.getElementById("formSequencia")){
 
-    document.getElementById("formPares").addEventListener("submit", function(event) {
+    document.getElementById("formSequencia").addEventListener("submit", function(event) {
         event.preventDefault();
         
+        lista = [3, 7, 2, 9, 5];
+        var maior = lista[0];
+
+        for(i of lista){
+            if(i>maior){
+                maior=i;
+            };
+        };
+        window.alert(maior);
 
     });
 }
